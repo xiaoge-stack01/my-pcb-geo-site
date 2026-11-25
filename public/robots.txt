@@ -1,0 +1,19 @@
+# 放行用于 AI 搜索和引用的爬虫
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+# 默认规则
+User-agent: *
+Allow: /
