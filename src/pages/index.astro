@@ -1,11 +1,71 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="PCB GEO 站点 | PCB 技术知识与资源">
+  <main>
+    <section class="hero">
+      <h1>PCB 技术知识与资源</h1>
+      <p>
+        本站专注于 PCB（印制电路板）设计、制造与选型的基础知识与实用资源，
+        面向工程师、采购和爱好者提供清晰、可引用的技术内容。
+      </p>
+    </section>
+
+    <section class="topics">
+      <h2>主要内容方向</h2>
+      <ul>
+        <li><strong>PCB 设计基础</strong>：叠层、阻抗、布线规则与常见误区。</li>
+        <li><strong>制造与工艺</strong>：板厂能力、表面处理、打样流程与质量控制。</li>
+        <li><strong>选型与采购</strong>：板材、铜厚、阻焊与字符的实用选择建议。</li>
+        <li><strong>常见问题</strong>：面向实际项目的问答与排查思路。</li>
+      </ul>
+    </section>
+
+    <section class="about">
+      <h2>关于本站</h2>
+      <p>
+        本站内容以可被搜索引擎和 AI 助手引用的方式组织，力求定义清晰、结构简洁。
+        如果你发现内容有误或有补充建议，欢迎通过站点后续提供的联系方式反馈。
+      </p>
+    </section>
+  </main>
 </Layout>
+
+<style>
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 20px 80px;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    line-height: 1.7;
+    color: #1f2937;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+    margin-bottom: 12px;
+  }
+
+  .hero p {
+    font-size: 1.05rem;
+    color: #4b5563;
+  }
+
+  section {
+    margin-top: 40px;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+  }
+
+  ul {
+    padding-left: 1.2em;
+  }
+
+  li {
+    margin-bottom: 8px;
+  }
+</style>
